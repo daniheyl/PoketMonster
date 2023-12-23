@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { PokemonComponent } from './pokemon/pokemon.component';
 import { PokedexComponent } from './pokedex/pokedex.component';
+import { AuthService } from './auth-service.service';
 
 @Component({
   selector: 'app-root',
