@@ -2,6 +2,12 @@
   <header class="pokedex">
     <img src="../assets/images/pokedexLogo.png" alt="pokedex logo" class="pokedex-logo" aria-hidden="true">
   </header>
+  <div class="header">
+    <nav>
+      <a [routerLink]="['/login']" >Login</a>
+      <a [routerLink]="['/']">Home</a>
+    </nav>
+  </div>
   <section class="content">
     <h1>Dit is de {{title}} app</h1>
       <router-outlet></router-outlet>
