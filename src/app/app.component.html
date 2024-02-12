@@ -4,8 +4,10 @@
   </header>
   <div class="header">
     <nav>
-      <a [routerLink]="['/login']" >Login</a>
-      <a [routerLink]="['/']">Home</a>
+      <a *ngIf="!authService.isLoggedIn()" [routerLink]="['/login']">Login</a>
+      <p *ngIf="authService.isLoggedIn()"> User is logged in</p>
+      <a *ngIf="authService.isLoggedIn()" (click)="authService.logout()">Sign out</a> <br> <!-- Add this line -->
+      <a [routerLink]="['/']">Home</a> 
     </nav>
   </div>
   <section class="content">

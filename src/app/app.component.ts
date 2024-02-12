@@ -16,4 +16,5 @@ import { AuthService } from './auth-service.service';
 })
 export class AppComponent {
   title = 'PoketMonster';
+  constructor(public authService: AuthService) { } // Inject AuthService
 }
