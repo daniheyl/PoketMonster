@@ -2,11 +2,12 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { PokemonService } from '../pokemon.service';
+import { RouterModule } from '@angular/router';
 import { Pokemon } from '../pokemon/pokemon';
 @Component({
   selector: 'app-pokemondetails',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './pokemondetails.component.html',
   styleUrl: './pokemondetails.component.css'
 })
