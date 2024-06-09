@@ -121,7 +121,64 @@ export class PokemonService {
           specialAttack: 109,
           specialDefense: 85,
           speed: 100
-      }
+      },
+  },
+  {
+    id: 7,
+    name: 'Squirtle',
+    types: ['Water'],
+    region: 'Kanto',
+    height: 5,
+    weight: 90,
+    description: 'Your description here',
+    sprite: this.spriteurl + '7.png',
+    abilities: ['Torrent', 'Rain Dish'],
+    stats: {
+        hp: 44,
+        attack: 48,
+        defense: 65,
+        specialAttack: 50,
+        specialDefense: 64,
+        speed: 43
+    },
+  },
+  {
+    id: 8,
+    name: 'Wartortle',
+    types: ['Water'],
+    region: 'Kanto',
+    height: 10,
+    weight: 225,
+    description: 'Your description here',
+    sprite: this.spriteurl + '8.png',
+    abilities: ['Torrent', 'Rain Dish'],
+    stats: {
+        hp: 59,
+        attack: 63,
+        defense: 80,
+        specialAttack: 65,
+        specialDefense: 80,
+        speed: 58
+    },
+  },
+  {
+    id: 9,
+    name: 'Blastoise',
+    types: ['Water'],
+    region: 'Kanto',
+    height: 16,
+    weight: 855,
+    description: 'Your description here',
+    sprite: this.spriteurl + '9.png',
+    abilities: ['Torrent', 'Rain Dish'],
+    stats: {
+        hp: 79,
+        attack: 83,
+        defense: 100,
+        specialAttack: 85,
+        specialDefense: 105,
+        speed: 78
+    },
   }
   ];
   constructor() { }
